@@ -1,68 +1,72 @@
-# 🚀 Projet Final - Synthèse d'Images
+# Project Final - Image Synthesis
 
-## 🌌 Space Explorer
+## Space Explorer
 
-Un jeu/visualisation spatiale interactive développé en C++ avec OpenGL, intégrant les concepts fondamentaux de la synthèse d'images (TP0 à TP5).
+An interactive space simulation/game developed in C++ with OpenGL, demonstrating fundamental concepts of image synthesis and computer graphics.
 
 ---
 
-## 📋 Table des matières
+## Table of Contents
 
-- [Aperçu](#aperçu)
-- [Fonctionnalités](#fonctionnalités)
-- [Concepts techniques abordés](#concepts-techniques-abordés)
-- [Prérequis](#prérequis)
+- [Overview](#overview)
+- [Features](#features)
+- [Technical Concepts](#technical-concepts)
+- [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Compilation](#compilation)
-- [Contrôles](#contrôles)
-- [Structure du projet](#structure-du-projet)
-- [Démonstration des concepts](#démonstration-des-concepts)
-- [Dépendances](#dépendances)
-- [Auteurs](#auteurs)
+- [Controls](#controls)
+- [Project Structure](#project-structure)
+- [Shader Implementations](#shader-implementations)
+- [Dependencies](#dependencies)
+- [Author](#author)
 
 ---
 
-## 🎮 Aperçu
+## Overview
 
-**Space Explorer** est une scène spatiale interactive où vous pilotez un vaisseau à travers un champ d'astéroïdes, avec une planète gazeuse en arrière-plan. Le projet démontre l'application pratique des concepts de rendu 3D/2D appris durant le cours de synthèse d'images.
-
----
-
-## ✨ Fonctionnalités
-
-- 🚀 **Contrôle du vaisseau** - Rotation et déplacement avec les touches du clavier
-- 💨 **Système de particules** - Effet de traînée réaliste du moteur
-- 🌍 **Planète texturée** - Avec anneau et effet atmosphérique
-- ☄️ **Astéroïdes animés** - Mouvement autonome et rebonds sur les bords
-- ⭐ **Fond étoilé** - Étoiles scintillantes + fond texturé
-- 🎨 **Effets visuels avancés** - Transparence, mélange de textures, halos lumineux
+Space Explorer is an interactive space scene where you pilot a spaceship through an asteroid field with a gas giant planet in the background. The project demonstrates practical application of rendering concepts in computer graphics.
 
 ---
 
-## 🎓 Concepts techniques abordés
+## Features
 
-| TP | Concept | Implémentation |
-|----|---------|----------------|
-| **TP0** | GLFW + GLAD | Initialisation de la fenêtre et chargement des fonctions OpenGL |
-| **TP1** | Fenêtre, boucle de rendu, input | Gestion clavier, viewport, redimensionnement |
-| **TP2** | VAO, VBO, EBO, shaders | Création de meshes, compilation de shaders, glDrawElements |
-| **TP4** | Textures, mipmaps, UV | Chargement textures avec stb_image, coordonnées UV, sampler2D |
-| **TP5** | Concepts avancés | Mix de textures, superposition texture+couleur, glActiveTexture |
-
----
-
-## 💻 Prérequis
-
-- **Windows / Linux / macOS**
-- **CMake** (≥ 3.10) ou compilation manuelle
-- **Compilateur C++17** (Visual Studio 2022+, GCC 11+, Clang 14+)
-- **OpenGL 3.3+**
+- Spaceship control with keyboard input (rotation and movement)
+- Particle system for engine exhaust trail
+- Textured planet with ring and atmospheric effect
+- Animated asteroids with autonomous movement and edge bouncing
+- Starfield background with twinkling stars
+- Advanced visual effects including transparency, texture blending, and glow halos
 
 ---
 
-## 📦 Installation
+## Technical Concepts
 
-### 1. Cloner le dépôt
+| Concept | Implementation |
+|---------|----------------|
+| Window Management | GLFW for window creation and input handling |
+| OpenGL Initialization | GLAD for loading OpenGL functions |
+| Rendering Pipeline | Vertex and fragment shaders for GPU-based rendering |
+| Geometry Management | VAO, VBO, EBO for efficient mesh storage |
+| Texture Mapping | UV coordinates, mipmaps, sampler2D uniforms |
+| Texture Blending | Mixing two textures with adjustable ratio |
+| Color Modulation | Multiplying texture color with vertex color |
+| Transformations | Translation, rotation, scaling using GLM matrices |
+| Transparency | Alpha blending with GL_SRC_ALPHA and GL_ONE_MINUS_SRC_ALPHA |
+
+---
+
+## Prerequisites
+
+- Windows / Linux / macOS
+- CMake (>= 3.10) or manual compilation
+- C++17 compatible compiler (Visual Studio 2022+, GCC 11+, Clang 14+)
+- OpenGL 3.3 or higher
+
+---
+
+## Installation
+
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/NourBen0/Computer-Generated-Imagery.git
