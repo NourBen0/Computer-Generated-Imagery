@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="CellDiffusion/CellDiffusion.vcxproj" Id="70699f6c-8e68-4122-a906-eb693d2e0fd3" />
+</Solution>
