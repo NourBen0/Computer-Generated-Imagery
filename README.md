@@ -1,4 +1,4 @@
-# Project Final - Image Synthesis
+# Computer-Generated-Imagery Project
 
 ## Space Explorer
 
